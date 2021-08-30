@@ -3,6 +3,7 @@ use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\Http;
 use App\Planet;
 
+
 class PlanetsTableSeeder extends Seeder
 {
     /**
