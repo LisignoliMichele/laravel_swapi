@@ -12,8 +12,8 @@ class SwapiController extends Controller
 {
     public function allPeople()
     {
-        $people = Character::all();
-        return response()->json($people);
+        $people = Character::paginate(10);
+        return response()->json($people, 200);
     }
     
     public function PeopleWithPlanet(Request $request)
